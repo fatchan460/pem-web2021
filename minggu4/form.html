@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Belajar Form</title>
+    </head>
+    <body>
+        <h2 align="center">FORMULIR PPDB JALUR ZONASI TAHUN 2020</h2><br>
+        <h3>Info Pendaftaran</h3>
+        <form action="proses.php" method="post" enctype="multipart/form-data" name="fcontoh">
+            <table style="margin-left" border="1">
+                <tr>
+                    <td><label for="fnim">NISN:</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="NISN Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Asal Sekolah:</label></td>
+                    <td><input type="text" id="fnama" name="fnama" type="text" required="" placeholder="Asal Sekolah Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Tahun Lulus:</label></td>
+                    <td><input type="text" id="fnama" name="fnama" type="text" required="" placeholder="Tahun Lulus Anda"><br>(Lampirkan fotocopy Ijazah)</td>
+                    <td action="proses.php" method="post" enctype="multipart/form-data">
+                        <input type='file' name='foto' />
+                    </td>
+                </tr>
+            </table>
+            <h3>Data Calon Peserta</h3>
+            <table style="margin-left" border="1">
+                <tr>
+                    <td><label for="fnim">Nama Lengkap:</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="Albert Einstein"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">NIK:</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="NIK Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Tempat/Tanggal Lahir:</label></td>
+                    <td><input type="date" id="fnim" name="fnim" type="date" required="" placeholder="Tanggal Lahir"></td>
+                    <td><label for="fnim">Umur:</label></td>
+                    <td><input type="number" min="10" max="90" type="number" required="" placeholder="18"></td>
+                    <td><label for="fnim">Tahun:</label></td>
+                    <td><input type="number" min="2018" max="2021" type="number" required="" placeholder="2020"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Fotocopy Akte Kelahiran</label></td>
+                    <td action="proses.php" method="post" enctype="multipart/form-data">
+                        <input type='file' name='foto' />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fprodi">Agama:</label></td>
+                    <td><select id="fprodi" name="fprodi" required="" >
+                        <option value="">None</option>
+                        <option value="48">Islam</option>
+                        <option value="49">Kristen</option>
+                        <option value="50">Kristen Katolik</option>
+                        <option value="51">Kristen Protestan</option>
+                        <option value="52">Kristen Ortodoks</option>
+                        <option value="53">Hindu</option>
+                        <option value="54">Budha</option>
+                        <option value="55">Konghucu</option>
+                        <option value="56">Atheis</option>
+                        <option value="57">Prefer not answer</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fgender">Jenis Kelamin:</label></td>
+                    <td><select id="fgender" name="fgender" required="" >
+                        <option value="">Click Here</option>
+                        <option value="45">Laki-laki</option>
+                        <option value="46">Perempuan</option>
+                        <option value="47">Prefer not answer</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="faddress">Alamat:</label></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Desa/Kelurahan</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="Lengkapi sesuai data"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Kecamatan</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="Lengkapi sesuai data"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Provinsi</label></td>
+                    <td><select id="faddress" name="faddress" required="" >
+                        <option value="">Lengkapi sesuai data</option>
+                        <option value="11">Nanggroe Aceh Darussalam</option>
+                        <option value="12">Sumatera Utara</option>
+                        <option value="13">Sumatera Selatan</option>
+                        <option value="14">Sumatera Barat</option>
+                        <option value="15">Bengkulu</option>
+                        <option value="16">Riau</option>
+                        <option value="17">Kepulauan Riau</option>
+                        <option value="18">Jambi</option>
+                        <option value="19">Lampung</option>
+                        <option value="20">Bangka Belitung</option>
+                        <option value="21">Kalimantan Barat</option>
+                        <option value="22">Kalimantan Timur</option>
+                        <option value="23">Kalimantan Selatan</option>
+                        <option value="44">Kalimantan Tengah</option>
+                        <option value="24">Kalimantan Utara</option>
+                        <option value="25">Banten</option>
+                        <option value="26">DKI Jakarta</option>
+                        <option value="27">Jawa Barat</option>
+                        <option value="28">Jawa Tengah</option>
+                        <option value="29">DI Yogyakarta</option>
+                        <option value="30">Jawa Timur</option>
+                        <option value="31">Bali</option>
+                        <option value="32">Nusa Tenggara Timur</option>
+                        <option value="33">Nusa Tenggara Barat</option>
+                        <option value="34">Gorontalo</option>
+                        <option value="35">Sulawesi Barat</option>
+                        <option value="36">Sulawesi Tengah</option>
+                        <option value="37">Sulawesi Utara</option>
+                        <option value="38">Sulawesi Tenggara</option>
+                        <option value="39">Sulawesi Selatan</option>
+                        <option value="40">Maluku Utara</option>
+                        <option value="41">Maluku</option>
+                        <option value="42">Papua Barat</option>
+                        <option value="43">Papua (Daerah Khusus)</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="email">Email aktif:</label></td>
+                    <td><input type="email" id="email" name="email" required="" placeholder="Alamat Email"></td>
+                </tr>
+            </table>
+            <h3>Data Orang Tua</h3>
+            <table style="margin-left" border="1">
+                <tr>
+                    <td><label for="fnim">Nomor Kartu Keluarga:</label></td>
+                        <td><input type="text" id="fnama" name="fnama" type="text" required="" placeholder="No KK Anda"><br>(Lampirkan fotocopy Ijazah)</td>
+                        <td action="proses.php" method="post" enctype="multipart/form-data">
+                            <input type='file' name='foto' />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Nama Ayah Kandung:</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="Nama Ayah"></td>
+                </tr>
+                <tr>
+                    <td><label for="fprodi">Agama:</label></td>
+                    <td><select id="fprodi" name="fprodi" required="" >
+                        <option value="">None</option>
+                        <option value="48">Islam</option>
+                        <option value="49">Kristen</option>
+                        <option value="50">Kristen Katolik</option>
+                        <option value="51">Kristen Protestan</option>
+                        <option value="52">Kristen Ortodoks</option>
+                        <option value="53">Hindu</option>
+                        <option value="54">Budha</option>
+                        <option value="55">Konghucu</option>
+                        <option value="56">Atheis</option>
+                        <option value="57">Prefer not answer</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Pekerjaan:</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="Pekerjaan Ayah"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Nama Ibu Kandung:</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="Nama Ibu"></td>
+                </tr>
+                <tr>
+                    <td><label for="fprodi">Agama:</label></td>
+                    <td><select id="fprodi" name="fprodi" required="" >
+                        <option value="">None</option>
+                        <option value="48">Islam</option>
+                        <option value="49">Kristen</option>
+                        <option value="50">Kristen Katolik</option>
+                        <option value="51">Kristen Protestan</option>
+                        <option value="52">Kristen Ortodoks</option>
+                        <option value="53">Hindu</option>
+                        <option value="54">Budha</option>
+                        <option value="55">Konghucu</option>
+                        <option value="56">Atheis</option>
+                        <option value="57">Prefer not answer</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Pekerjaan:</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="Pekerjaan Ibu"></td>
+                </tr>
+                <tr>
+                    <td><label for="faddress">Alamat Orang Tua:</label></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Desa/Kelurahan</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="Lengkapi sesuai data"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Kecamatan</label></td>
+                    <td><input type="text" id="fnim" name="fnim" type="text" required="" placeholder="Lengkapi sesuai data"></td>
+                </tr>
+                <tr>
+                    <td><label for="fnim">Provinsi</label></td>
+                    <td><select id="faddress" name="faddress" required="" >
+                        <option value="">Lengkapi sesuai data</option>
+                        <option value="11">Nanggroe Aceh Darussalam</option>
+                        <option value="12">Sumatera Utara</option>
+                        <option value="13">Sumatera Selatan</option>
+                        <option value="14">Sumatera Barat</option>
+                        <option value="15">Bengkulu</option>
+                        <option value="16">Riau</option>
+                        <option value="17">Kepulauan Riau</option>
+                        <option value="18">Jambi</option>
+                        <option value="19">Lampung</option>
+                        <option value="20">Bangka Belitung</option>
+                        <option value="21">Kalimantan Barat</option>
+                        <option value="22">Kalimantan Timur</option>
+                        <option value="23">Kalimantan Selatan</option>
+                        <option value="44">Kalimantan Tengah</option>
+                        <option value="24">Kalimantan Utara</option>
+                        <option value="25">Banten</option>
+                        <option value="26">DKI Jakarta</option>
+                        <option value="27">Jawa Barat</option>
+                        <option value="28">Jawa Tengah</option>
+                        <option value="29">DI Yogyakarta</option>
+                        <option value="30">Jawa Timur</option>
+                        <option value="31">Bali</option>
+                        <option value="32">Nusa Tenggara Timur</option>
+                        <option value="33">Nusa Tenggara Barat</option>
+                        <option value="34">Gorontalo</option>
+                        <option value="35">Sulawesi Barat</option>
+                        <option value="36">Sulawesi Tengah</option>
+                        <option value="37">Sulawesi Utara</option>
+                        <option value="38">Sulawesi Tenggara</option>
+                        <option value="39">Sulawesi Selatan</option>
+                        <option value="40">Maluku Utara</option>
+                        <option value="41">Maluku</option>
+                        <option value="42">Papua Barat</option>
+                        <option value="43">Papua (Daerah Khusus)</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td align="left"><label><input type="checkbox" name="remember" value="remember"/>Remember me</label></td>
+                    <td colspan="2" align="center"><input type="submit" name="fsubmit" value="Simpan"></td>
+                </tr>
+            </table>
+
+        </form>
+    </body>
+</html>
